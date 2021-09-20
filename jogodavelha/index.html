@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title"><h1>Jogo da Velha!</h1></div>
+    <div id="score">
+        <h2 id="cross-score">Pontuação X: </h2>
+        <h2 id="round-socre">Pontuação O: </h2>
+    </div>
+    <div id="container-table">
+        <table id="table">
+            <tr id="a">
+                <th class="a" onclick = "mudarIco()">x </th>
+                <th class="a" onclick = "mudarIco()"> </th>
+                <th class="a" onclick = "mudarIco()"> </th>
+            </tr>
+            <tr id="b">
+                <th class="b" onclick = "mudarIco()"> </th>
+                <th class="b" onclick = "mudarIco()"> </th>
+                <th class="b" onclick = "mudarIco()"> </th>
+            </tr>
+            <tr id="c">
+                <th class="c" onclick = "mudarIco()"> </th>
+                <th class="c" onclick = "mudarIco()"> </th>
+                <th class="c" onclick = "mudarIco()"> </th>
+            </tr>
+        </table>
+    </div>
+    <div class="buttons">
+        <button type="button">Reset</button>
+    </div>
+</body>
+</html>
