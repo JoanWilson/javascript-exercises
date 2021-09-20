@@ -1,0 +1,246 @@
+@charset "UTF-8";
+/*RESET*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+}
+ 
+/*CABEÇALHO*/
+header #menu-main {
+    height: 70px;
+    background-color: rgb(49, 49, 49);
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: 17px 16px 15px;
+    position: fixed;
+    top: 0;
+    width:100%;
+}
+
+header #logo {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    color: rgb(58, 223, 99);
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+header ul {
+    margin-top: 5px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    list-style: none;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+header ul li {
+    height: 48px;
+    margin-left: 30px;
+    
+}
+
+header ul li:hover {
+    border-bottom: 2px solid rgb(58, 223, 99);
+}
+
+header ul li a {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.664);
+}
+
+header ul li a:hover {
+    color: white;
+}
+
+header ul li a:link{
+    text-decoration: none;
+}
+
+/*BANNER*/
+
+.banner {
+    margin-top: 50px;
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 3% 4%;
+    background-image: url(../img/banner.JPG) ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.banner h1 {
+    margin-top: 30px;
+}
+
+.banner h2 {
+    text-shadow: rgba(0, 0, 0, 0.712) 0px 0px 5px;
+    margin-top: 30px;
+    font-size: 2.5em;
+    color: white;
+}
+
+.banner h3 {
+    text-shadow: rgba(0, 0, 0, 0.712) 0px 0px 5px;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 500;
+}
+
+.banner #btn-menu {
+    border: none;
+    margin: 50px 0; 
+    width: 300px;
+    height: 100px;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgb(45, 180, 79);
+    font-size: 1.2em;
+    color: rgb(0, 104, 0);
+}
+
+.banner #btn-menu:hover {
+    background-color: rgb(58, 223, 99);
+    color: green;
+}
+
+
+/*SOBRE*/
+#sobre {
+    color: azure;
+    padding: 5% 0;
+    background-color: rgb(37, 37, 37);
+}
+
+#sobre .conteudo-sobre {
+    margin: 0 15%;
+    text-align: center;
+    padding-top: 600px;
+}
+
+
+#forma {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+}
+
+
+
+#um {
+    grid-column-start: 1;
+}
+
+#dois {
+    grid-column-start: 3;
+}
+
+#forma img {
+    border-radius: 12px;
+    margin: 5px 0px;
+}
+
+#gelo, #fogo {
+    font-size: 3em;
+    margin: 8px 0;
+}
+
+/*PRODUTOS*/
+
+.produtos {
+    margin: 50px 15%;
+}
+
+.produtos h2 {
+    margin: 50px 0%;
+    display: flex;
+    justify-content: center;
+}
+
+div.items {
+    
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+}
+
+.item-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-color: gray;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+#a{grid-column-start: 1; grid-row-start: 1;}
+#b{grid-column-start: 2; grid-row-start: 1;}
+#c{grid-column-start: 3; grid-row-start: 1;}
+#d{grid-column-start: 1; grid-row-start: 2;}
+#e{grid-column-start: 2; grid-row-start: 2;}
+#f{grid-column-start: 3; grid-row-start: 2;}
+
+/*CONTATO*/
+.contato {
+    background-color: rgb(37, 37, 37);
+    padding: 50px 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mapa {
+    text-align: center;
+    color: white;
+}
+
+.mapa h2 {
+    margin-bottom: 20px;
+}
+
+.pedido {
+    color: white;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.names {
+    width: 300px;
+    margin: 10px 0;
+    height: 40px;
+    background: none;
+    color: white;
+    padding: 4%;
+    font-size: 1em;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
+.pedido textarea {
+    width: 300px;
+    height: 200px;
+    resize: none;
+    padding: 2%;
+    font-size:1em;
+}
+
+#submit {
+    cursor: pointer;
+    width: 300px;
+    height: 40px;
+    margin: 12px 0;
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1em;
+}
+
+#submit:hover {
+    background-color: rgb(1, 167, 1);
+}
