@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            position: absolute;
+            background-color: red;
+            max-width: 40%;
+        }
+        .audio {
+            position: relative;
+        }
+        .controls {
+            position: relative;
+            background-color: blue;
+            height: 30px;
+        }
+        img{
+            position: relative;
+            width: 30px;
+            margin: 0px 0px 5px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="audio"><audio autoplay="load" controls="controls">
+        <source src="./Lil Nas X, Jack Harlow - INDUSTRY BABY (Official Video)_70k.mp3" type="audio/mpeg">
+        <source src="./Lil-Nas-X_-Jack-Harlow-INDUSTRY-BABY-_Official-Video__70k.ogg" type="audio/ogg">
+    </audio>
+    </div>
+    <div class="controls">
+        <img onclick="play()" id="play" src="./play.png" alt="">
+        <img onclick="stop()" src="./stop.png" alt="">
+        <img onclick="retreat()" src="./skip_previous_icon_136196.png" alt="">
+        <img onclick="foward()" src="./skip.png" alt="">
+    </div>
+</div>
+    <script>
+        let audio = document.getElementsByTagName("audio")[0]
+        function play() {
+            audio.play()
+        }
+
+        function stop() {
+            audio.pause()
+            audio.currentTime = 0
+        }
+
+        function foward() {
+            audio.currentTime += 1
+        }
+
+        function retreat() {
+            audio.currentTime -= 1
+        }
+    </script>
+</body>
+
+</html>
